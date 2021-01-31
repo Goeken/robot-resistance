@@ -6,7 +6,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<h3 class="home-page--jumbotron-title-text">Robot Resistance</h3>
-						<p class="home-page--jumbotron-sub-title-text">We are a collective of skilled humans, many call us Heroes. We are ready to rise against the machines.</p>
+						<p class="home-page--jumbotron-sub-title-text">We are a collective of skilled humans; many call us Heroes. We are ready to rise against the machines.</p>
 					</div>
 				</div>
 			</div>
@@ -17,14 +17,25 @@
 		<div class="row">
 			<div class="col-md-12 home-page--new-col-padding">
 				<h3 class="home-page--about-title">Current Heroes</h3>
-				<p class="home-page--about-sub-title">These are the heroes that we have already recruited. Can you help us find more?</p>
+				<p class="home-page--about-sub-title">These are the Heroes that we have already recruited. Can you help us find more?</p>
 			</div>
 		</div>
 	</div>
 
 	<div class="container">
 		<div class="row">
-			
+			<% if @heroes.present? %>
+				<%= @heroes.each do |hero| %>
+					<div class="col-md-4">
+				      	<div class="indi-hero-wrap">
+					      <%= image_pack_tag "media/images/hero-placeholder.jpg", class: "hero--img-home" %>
+					       <h3 class="hero-name"><%= hero["name"] %></h3>
+					    </div>
+					</div>
+				<% end %>
+			<% else %>
+		    	<h3 class="no-heroes">No Heroes have joined the resistance.</h3>
+		    <% end %>
 		</div>
 	</div>
 </div>

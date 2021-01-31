@@ -6,6 +6,14 @@ class HeroesController < ApplicationController
 
   def index; end
 
+  def create
+    # Check if Hero already exists - Return error message
+    Hero.create(hero_params)
+    # Now it's time to add a badge? Or should I add badge information with Hero
+
+    redirect_to root_path, flash: { badge_modal: true }
+  end
+
   def search
     # find_hero is found in services/heroes folder to help with API Call
   	@heroes = find_hero(params[:hero_name])
@@ -30,5 +38,10 @@ class HeroesController < ApplicationController
    def set_hero_value
     @heroes = []
    end 
+
+   def hero_params
+    params.permit(:name, :id)
+   end
+
 
 end

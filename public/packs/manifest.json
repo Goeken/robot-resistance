@@ -1,15 +1,15 @@
 {
-  "application.js": "/packs/js/application-52c75e47c74dcf789a4c.js",
-  "application.js.map": "/packs/js/application-52c75e47c74dcf789a4c.js.map",
+  "application.js": "/packs/js/application-507a238ac5da8e1fc666.js",
+  "application.js.map": "/packs/js/application-507a238ac5da8e1fc666.js.map",
   "credly_take_home_header.js": "/packs/js/credly_take_home_header-73aad39d40542292b529.js",
   "credly_take_home_header.js.map": "/packs/js/credly_take_home_header-73aad39d40542292b529.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-52c75e47c74dcf789a4c.js"
+        "/packs/js/application-507a238ac5da8e1fc666.js"
       ],
       "js.map": [
-        "/packs/js/application-52c75e47c74dcf789a4c.js.map"
+        "/packs/js/application-507a238ac5da8e1fc666.js.map"
       ]
     },
     "credly_take_home_header": {

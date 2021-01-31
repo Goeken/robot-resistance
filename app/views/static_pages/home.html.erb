@@ -16,8 +16,8 @@
 	<div class="container home-page--about-section">
 		<div class="row">
 			<div class="col-md-12 home-page--new-col-padding">
-				<h3 class="home-page--about-title">Current Heroes</h3>
-				<p class="home-page--about-sub-title">These are the Heroes that we have already recruited. Can you help us find more?</p>
+				<h3 class="home-page--about-title">Current Heroes <span class="special-blue">(<%=@heroes.length %>)</span></h3>
+				<p class="home-page--about-sub-title">These are the Heroes that we have already recruited. You can see more details about them by their badges. The badges will let you know what particular skill each hero possesses.</p>
 			</div>
 		</div>
 	</div>
@@ -25,7 +25,7 @@
 	<div class="container">
 		<div class="row">
 			<% if @heroes.present? %>
-				<%= @heroes.each do |hero| %>
+				<% @heroes.each do |hero| %>
 					<div class="col-md-4">
 				      	<div class="indi-hero-wrap">
 					      <%= image_pack_tag "media/images/hero-placeholder.jpg", class: "hero--img-home" %>
@@ -39,3 +39,24 @@
 		</div>
 	</div>
 </div>
+
+
+
+<!-- Large modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    	<br/><br/>
+      This is it<br/><br/><br/><br/>
+    </div>
+  </div>
+</div>
+
+<script>
+	$('.bd-example-modal-lg').modal();
+	<% if flash[:badge_modal] %>
+		$('.bd-example-modal-lg').modal();
+	<% end %>
+</script>

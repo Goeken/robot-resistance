@@ -10,7 +10,11 @@
       	<div class="indi-hero-wrap">
 	      <%= image_pack_tag "media/images/hero-placeholder.jpg", class: "hero--img" %>
 	       <h3 class="hero-name"><%= hero["name"] %></h3>
-	       <button class="btn btn-primary add-hero-btn">Add +</button>
+        <%= form_for(Hero.new, remote: true) do |f| %>
+          <%= f.hidden_field :name,  value: hero["name"] %>
+          <%= f.hidden_field :hero_id, value: hero["id"] %>
+          <button type="submit" class="btn btn-primary add-hero-btn">Add +</button>
+        <% end %>
 	    </div>
       </div>
     <% end %>

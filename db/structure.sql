@@ -156,6 +156,9 @@ ALTER SEQUENCE public.friendly_id_slugs_id_seq OWNED BY public.friendly_id_slugs
 CREATE TABLE public.heros (
     id bigint NOT NULL,
     name text,
+    hero_id text,
+    description text,
+    thumbnail text,
     created_at timestamp(6) without time zone NOT NULL,
     updated_at timestamp(6) without time zone NOT NULL
 );

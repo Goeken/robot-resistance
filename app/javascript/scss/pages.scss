@@ -71,43 +71,79 @@
 	padding-top: 30px;
 }
 
-.auth-page--outer-wrapper{
-	min-height: calc(100vh - 224px);
+// Search Page Styles
+
+.search-page--outer-wrapper{
+	min-height: calc(100vh - 166px);
+}
+.search-form-title{
+	text-align: center;
+	h3{
+		padding-top: 60px;
+	}
+	p{
+		padding-top: 10px;
+	}
+	.note{
+		font-size: 12px;
+		font-style: italic;
+	}
+}
+.search-title{
+	text-align: center;
+	padding-top: 60px;
+    padding-bottom: 60px;
+    .special-blue{
+    	color: #0d6efd;
+    }
+}
+#hero-results{
+	display: none;
+}
+.search-form-container{
+	padding-top: 0px;
 	padding-bottom: 60px;
 }
-.auth-page--form-wrapper{
-	width: 100%;
-	max-width: 400px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 60px;
-	padding: 22px;
-	padding-top: 30px;
-    padding-bottom: 30px;
-	background-color: white;
-	border-radius: 5px;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-
-}
-.auth-page--form-title{
-	text-align: center;
-	padding-bottom: 20px;
-}
-.auth-page--authorization-btn{
-	margin-top: 10px !important;
-	width: 100% !important;
-	padding: 10px !important;
-	border-radius: 5px !important;
-	color: white !important;
+.btn-search{
 	background-color: #3F729B !important;
-}
-
-.auth-page--authorization-btn:hover{	
-	text-decoration: none !important;
-	opacity: .6 !important;
+	border: 1px solid #3F729B !important;
 	color: white !important;
+    float: right;
+    min-width: 140px;
 }
+.btn-search:hover{
+	background-color: #3F729B;
+	text-decoration: none;
+	opacity: .6;
+	color: white;
+}
+.hero-result-wrapper{
+	padding-bottom: 60px;
+}
+.hero--img{
+	max-width: 100px;
+	padding-bottom: 10px;
+}
+.hero-name{
+	padding-top: 5px;
+	padding-bottom: 5px;
 
-.auth-page--email-field, .auth-page--password-field, .auth-page--team-field{
-  border-radius: 5px !important;
+}
+.hero-description{
+	font-size: 12px;
+}
+.add-hero-btn{
+	background-color: #3F729B !important;
+	border: 1px solid #3F729B !important;
+	color: white !important;
+    min-width: 140px;
+}
+.add-hero-btn:hover{
+	background-color: #3F729B;
+	text-decoration: none;
+	opacity: .6;
+	color: white;
+}
+.indi-hero-wrap{
+	padding-bottom: 40px;
 }

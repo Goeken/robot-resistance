@@ -1,0 +1,18 @@
+<div class="container hero-result-wrapper">
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="search-title">You have <span class="special-blue"><%= @hero_count %></span> heroes that are willing to join the fight against the AI uprising.</h3>
+    </div>
+  </div>
+  <div class="row">
+    <% @heroes.each do |hero| %>
+      <div class="col-md-6">
+      	<div class="indi-hero-wrap">
+	      <%= image_pack_tag "media/images/hero-placeholder.jpg", class: "hero--img" %>
+	       <h3 class="hero-name"><%= hero["name"] %></h3>
+	       <button class="btn btn-primary add-hero-btn">Add +</button>
+	    </div>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,27 +1,28 @@
 {
-  "application.js": "/packs/js/application-6373d0d759677fd23e8c.js",
-  "application.js.map": "/packs/js/application-6373d0d759677fd23e8c.js.map",
-  "credly_take_home_header.js": "/packs/js/credly_take_home_header-f65d9d27d79300fc691b.js",
-  "credly_take_home_header.js.map": "/packs/js/credly_take_home_header-f65d9d27d79300fc691b.js.map",
+  "application.js": "/packs/js/application-8b8af7ecf020fd880b54.js",
+  "application.js.map": "/packs/js/application-8b8af7ecf020fd880b54.js.map",
+  "credly_take_home_header.js": "/packs/js/credly_take_home_header-73aad39d40542292b529.js",
+  "credly_take_home_header.js.map": "/packs/js/credly_take_home_header-73aad39d40542292b529.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-6373d0d759677fd23e8c.js"
+        "/packs/js/application-8b8af7ecf020fd880b54.js"
       ],
       "js.map": [
-        "/packs/js/application-6373d0d759677fd23e8c.js.map"
+        "/packs/js/application-8b8af7ecf020fd880b54.js.map"
       ]
     },
     "credly_take_home_header": {
       "js": [
-        "/packs/js/credly_take_home_header-f65d9d27d79300fc691b.js"
+        "/packs/js/credly_take_home_header-73aad39d40542292b529.js"
       ],
       "js.map": [
-        "/packs/js/credly_take_home_header-f65d9d27d79300fc691b.js.map"
+        "/packs/js/credly_take_home_header-73aad39d40542292b529.js.map"
       ]
     }
   },
   "media/images/error_flash_icon.png": "/packs/media/images/error_flash_icon-22506f88fddb560ad25c1bb0ef231fd6.png",
+  "media/images/hero-placeholder.jpg": "/packs/media/images/hero-placeholder-d12808841e6143af1326cf5f86387ad9.jpg",
   "media/images/no-robots.png": "/packs/media/images/no-robots-b05b77092c5c5993922aae9a56ff9c0f.png",
   "media/images/notice_flash_icon.png": "/packs/media/images/notice_flash_icon-cea10e30e78af6ad06336ea78bf68b31.png",
   "media/images/robot-resistance-banner-1.jpg": "/packs/media/images/robot-resistance-banner-1-880ed71bd915b05269a09a2ebfa32067.jpg",

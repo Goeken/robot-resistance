@@ -1,0 +1,2 @@
+$("#hero-results").css("display","block");
+$("#hero-results").html("<%= escape_javascript(render partial: "heroes/results", locals: {heroes: @heroes}) %>");

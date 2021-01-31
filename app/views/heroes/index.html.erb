@@ -1,15 +1,26 @@
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12 mt-5">
-      <div class="mx-auto mt-5">
-        <%= form_with(url: search_path, method: 'get', local: true) do %>
-          <div class="form-group">
-            <%= label_tag :hero_name, 'Search for a hero'%>
-            <%= text_field_tag :hero_name, nil, placeholder: 'Eg. Incredible Hulk', class: 'form-control' %>
-          </div>
-          <button class="btn btn-success btn-block" type="submit">Search</button>
-        <% end %>
+<div class="search-page--outer-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="search-form-title">
+          <h3>Hero Catalog</h3>
+          <p>Once a Hero is chosen, the resistance will assess their skill levels and assign them a badge. You will be able to use this badge to identify the hero's skills and other attributes.</p>
+          <p class="note">Note: the search form will perform a "starts with search"</p>
+        </div>
+        <div class="search-form-container">
+          <%= form_with(url: search_path, method: 'get', remote: true) do %>
+            <div class="form-group">
+              <%= text_field_tag :hero_name, nil, placeholder: 'Eg. Incredible Hulk', class: 'form-control' %>
+            </div>
+            <button class="btn btn-success btn-block btn-search" type="submit">Search</button>
+          <% end %>
+        </div>
       </div>
     </div>
+  </div>
+
+  <div id="hero-results">
+      <%= render 'results' %>
   </div>
 </div>

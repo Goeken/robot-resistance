@@ -1,0 +1,113 @@
+// All pages
+
+.button-icon-first{
+	max-width: 25px;
+	margin-right: 10px;
+}
+.button-icon{
+	max-width: 25px;
+	margin-left: 10px;
+}
+.change-icons{
+	max-width: 20px;
+}
+.edit-icon{
+	max-width: 25px;
+	margin-bottom: 30px;
+}
+.edit-icon:hover{
+	opacity: .6;
+}
+.form-group{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+// Home page styles
+
+.home-page--outer-wrapper{
+	min-height: calc(100vh - 166px);
+}
+
+#home-page--jumbotron{
+    background: url("~robot-resistance-banner-2.jpg") no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.home-page--jumbotron-overlay{
+	background-color: rgba(0,0,0,.5);
+	height: 100%;
+	width: 100%;
+}
+.home-page--jumbotron-title-text{
+	color: white;
+	font-size: 3em;
+	padding-top: 100px;
+	text-align: center;
+}
+.home-page--jumbotron-sub-title-text{
+	color: white;
+	text-align: center;
+	font-size: 1.8em;
+	padding-bottom: 100px;
+}
+.home-page--about-section{
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+.home-page--about-title{
+	padding-bottom: 20px;
+}
+.home-page--about-sub-title{
+
+}
+.home-page--new-col-padding{
+	padding-top: 30px;
+}
+
+.auth-page--outer-wrapper{
+	min-height: calc(100vh - 224px);
+	padding-bottom: 60px;
+}
+.auth-page--form-wrapper{
+	width: 100%;
+	max-width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 60px;
+	padding: 22px;
+	padding-top: 30px;
+    padding-bottom: 30px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+.auth-page--form-title{
+	text-align: center;
+	padding-bottom: 20px;
+}
+.auth-page--authorization-btn{
+	margin-top: 10px !important;
+	width: 100% !important;
+	padding: 10px !important;
+	border-radius: 5px !important;
+	color: white !important;
+	background-color: #3F729B !important;
+}
+
+.auth-page--authorization-btn:hover{	
+	text-decoration: none !important;
+	opacity: .6 !important;
+	color: white !important;
+}
+
+.auth-page--email-field, .auth-page--password-field, .auth-page--team-field{
+  border-radius: 5px !important;
+}

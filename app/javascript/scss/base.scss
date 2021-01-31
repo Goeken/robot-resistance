@@ -1,0 +1,86 @@
+/* 
+I only include universal styles + navbar + footer
+in main base.scss for easy access
+*/
+
+h1, h2, h3, h4, h5{
+	font-family: 'Montserrat', sans-serif;
+	color: #313342;
+}
+p{
+	font-family: 'Open Sans', sans-serif;
+	color: #6f7495;
+}
+.navbar{
+	background-color: white;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.mt-2{
+	margin-left: auto !important;
+}
+
+.navbar-brand{
+	color:#3F729B;
+	margin-right: 20px;
+}
+.navbar-brand:hover{
+	color:#3F729B;
+
+}
+.nav-link{
+	font-family: 'Montserrat', sans-serif;
+	color: #313342;
+}
+.nav-link:hover{
+	color: #313342;
+	opacity: .6;
+}
+.nav-btn{
+	margin-right: 10px;
+	padding-left: 30px !important;
+	padding-right: 30px !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+	margin-top: 2px;
+}
+.navbar-light .navbar-nav .nav-link{
+	font-family: 'Montserrat', sans-serif;
+	color: #313342;
+}
+.footer--wrapper{
+	background-color: #1C2331;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+.footer--text{
+	color: white;
+	font-size: 1.1em;
+}
+.btn-primary{
+	background-color: #3F729B;
+	border: 1px solid #3F729B;
+	color: white !important;
+}
+.btn-primary:hover{
+	background-color: #3F729B;
+	text-decoration: none;
+	opacity: .6;
+	color: white;
+}
+.navbar--logo{
+	max-height: 35px;
+	margin-right: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+	.nav-btn{
+		margin-right: 10px;
+		padding-left: 30px !important;
+		padding-right: 30px !important;
+		max-width: 200px;
+	}
+}

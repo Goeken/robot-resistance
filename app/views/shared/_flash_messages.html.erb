@@ -1,0 +1,17 @@
+<% flash.each do |key, value| %>
+	<div class="flash_<%= key %> flash_message " >
+		<%= image_pack_tag "#{key}_flash_icon.png", class: "flash-message-icon" %>
+		<p><%= value %></p>
+	</div>
+<% end %>
+
+<script>
+	$(function() {
+	   $('.flash_message').fadeIn('slow', function() {
+	      $(this).delay(3900).fadeOut();
+	   });
+	   $('#error_explanation').fadeIn('slow', function() {
+	      $(this).delay(4900).fadeOut();
+	   });
+	});
+</script>

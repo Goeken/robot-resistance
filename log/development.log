@@ -5435,3 +5435,547 @@ Faraday::ConnectionFailed (Failed to open TCP connection to :80 (Connection refu
 app/services/credlyService.rb:7:in `find_org'
 app/controllers/heroes_controller.rb:20:in `find_hero'
 app/controllers/heroes_controller.rb:7:in `search'
+Started GET "/search?hero_name=hulk" for ::1 at 2021-01-31 10:42:01 -0800
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"hulk"}
+Completed 500 Internal Server Error in 324ms (ActiveRecord: 0.0ms | Allocations: 2194)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "://"):
+  
+app/services/credlyService.rb:8:in `find_org'
+app/controllers/heroes_controller.rb:20:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started GET "/search" for ::1 at 2021-01-31 10:42:04 -0800
+Processing by HeroesController#search as HTML
+Completed 500 Internal Server Error in 231ms (ActiveRecord: 0.0ms | Allocations: 1339)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "://"):
+  
+app/services/credlyService.rb:8:in `find_org'
+app/controllers/heroes_controller.rb:20:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started GET "/" for ::1 at 2021-01-31 10:42:08 -0800
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 6.6ms | Allocations: 2511)
+  Rendered shared/_footer.html.erb (Duration: 0.9ms | Allocations: 83)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.0ms | Allocations: 6803)
+
+
+Started GET "/heroes" for ::1 at 2021-01-31 10:42:10 -0800
+Processing by HeroesController#index as HTML
+  Rendering heroes/index.html.erb within layouts/application
+  Rendered heroes/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 325)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 5.6ms | Allocations: 2292)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 6006)
+
+
+Started GET "/search?hero_name=hulk" for ::1 at 2021-01-31 10:42:13 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"hulk"}
+Completed 500 Internal Server Error in 297ms (ActiveRecord: 0.0ms | Allocations: 1372)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "://"):
+  
+app/services/credlyService.rb:8:in `find_org'
+app/controllers/heroes_controller.rb:20:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started GET "/search?hero_name=hulk" for ::1 at 2021-01-31 10:42:58 -0800
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"hulk"}
+Completed 500 Internal Server Error in 335ms (ActiveRecord: 0.0ms | Allocations: 2955)
+
+
+  
+Faraday::ConnectionFailed (Failed to open TCP connection to www.sandbox.youracclaim.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/services/credlyService.rb:10:in `find_org'
+app/controllers/heroes_controller.rb:20:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started PUT "/__web_console/repl_sessions/3953f46990ed8334dbf434eb6d27ba87" for ::1 at 2021-01-31 10:43:15 -0800
+Started PUT "/__web_console/repl_sessions/3953f46990ed8334dbf434eb6d27ba87" for ::1 at 2021-01-31 10:43:16 -0800
+Started GET "/search?hero_name=hulk" for ::1 at 2021-01-31 10:43:42 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"hulk"}
+Completed 500 Internal Server Error in 329ms (ActiveRecord: 0.0ms | Allocations: 1738)
+
+
+  
+Faraday::ConnectionFailed (Failed to open TCP connection to www.sandbox.youracclaim.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/services/credlyService.rb:10:in `find_org'
+app/controllers/heroes_controller.rb:20:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started PUT "/__web_console/repl_sessions/d953bc540cb6fb7461c0779747464f07" for ::1 at 2021-01-31 10:43:50 -0800
+Started PUT "/__web_console/repl_sessions/d953bc540cb6fb7461c0779747464f07" for ::1 at 2021-01-31 10:43:50 -0800
+Started PUT "/__web_console/repl_sessions/d953bc540cb6fb7461c0779747464f07" for ::1 at 2021-01-31 10:43:53 -0800
+Started GET "/search?hero_name=hulk" for ::1 at 2021-01-31 10:44:15 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"hulk"}
+Completed 500 Internal Server Error in 289ms (ActiveRecord: 0.0ms | Allocations: 1776)
+
+
+  
+Faraday::ConnectionFailed (Failed to open TCP connection to www.sandbox.youracclaim.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/services/credlyService.rb:10:in `find_org'
+app/controllers/heroes_controller.rb:20:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started GET "/search?hero_name=hulk" for ::1 at 2021-01-31 10:45:03 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"hulk"}
+Completed 500 Internal Server Error in 321ms (ActiveRecord: 0.0ms | Allocations: 1736)
+
+
+  
+Faraday::ConnectionFailed (Failed to open TCP connection to www.sandbox.youracclaim.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/services/credlyService.rb:10:in `find_org'
+app/controllers/heroes_controller.rb:20:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started GET "/search?hero_name=hulk" for ::1 at 2021-01-31 10:47:03 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"hulk"}
+Completed 500 Internal Server Error in 312ms (ActiveRecord: 0.0ms | Allocations: 1327)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 2)):
+  
+app/services/credlyService.rb:9:in `find_org'
+app/controllers/heroes_controller.rb:20:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started PUT "/__web_console/repl_sessions/53b2708793fd111e5a4a52f6a19ba178" for ::1 at 2021-01-31 10:47:18 -0800
+Started PUT "/__web_console/repl_sessions/53b2708793fd111e5a4a52f6a19ba178" for ::1 at 2021-01-31 10:47:19 -0800
+Started GET "/search?hero_name=hulk" for ::1 at 2021-01-31 10:47:21 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"hulk"}
+Completed 500 Internal Server Error in 363ms (ActiveRecord: 0.0ms | Allocations: 1784)
+
+
+  
+Faraday::ConnectionFailed (Failed to open TCP connection to www.sandbox.youracclaim.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/services/credlyService.rb:10:in `find_org'
+app/controllers/heroes_controller.rb:20:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started PUT "/__web_console/repl_sessions/a61a48b2d809e18a5b15c01420a16f39" for ::1 at 2021-01-31 10:47:32 -0800
+Started PUT "/__web_console/repl_sessions/a61a48b2d809e18a5b15c01420a16f39" for ::1 at 2021-01-31 10:47:32 -0800
+Started PUT "/__web_console/repl_sessions/a61a48b2d809e18a5b15c01420a16f39" for ::1 at 2021-01-31 10:47:35 -0800
+Started GET "/search?hero_name=hulk" for ::1 at 2021-01-31 10:48:41 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"hulk"}
+Completed 500 Internal Server Error in 340ms (ActiveRecord: 0.0ms | Allocations: 1782)
+
+
+  
+Faraday::ConnectionFailed (Failed to open TCP connection to www.sandbox.youracclaim.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/services/credlyService.rb:10:in `find_org'
+app/controllers/heroes_controller.rb:20:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started GET "/search?hero_name=hulk" for ::1 at 2021-01-31 10:49:32 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"hulk"}
+Completed 500 Internal Server Error in 348ms (ActiveRecord: 0.0ms | Allocations: 1775)
+
+
+  
+Faraday::ConnectionFailed (Failed to open TCP connection to www.sandbox.youracclaim.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/services/credlyService.rb:10:in `find_org'
+app/controllers/heroes_controller.rb:20:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started GET "/" for ::1 at 2021-01-31 10:50:16 -0800
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.5ms | Allocations: 104)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 8.0ms | Allocations: 2511)
+  Rendered shared/_footer.html.erb (Duration: 0.9ms | Allocations: 83)
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.0ms | Allocations: 6806)
+
+
+Started GET "/heroes" for ::1 at 2021-01-31 10:50:17 -0800
+Processing by HeroesController#index as HTML
+  Rendering heroes/index.html.erb within layouts/application
+  Rendered heroes/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 325)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 5.3ms | Allocations: 2292)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 6026)
+
+
+Started GET "/search?hero_name=hulk" for ::1 at 2021-01-31 10:50:21 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"hulk"}
+Completed 500 Internal Server Error in 330ms (ActiveRecord: 0.0ms | Allocations: 1780)
+
+
+  
+Faraday::ConnectionFailed (Failed to open TCP connection to www.sandbox.youracclaim.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/services/credlyService.rb:10:in `find_org'
+app/controllers/heroes_controller.rb:20:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started GET "/search?hero_name=hulk" for ::1 at 2021-01-31 10:51:28 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"hulk"}
+Completed 500 Internal Server Error in 378ms (ActiveRecord: 0.0ms | Allocations: 1764)
+
+
+  
+Faraday::ConnectionFailed (Failed to open TCP connection to www.sandbox.youracclaim.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/services/credlyService.rb:10:in `find_org'
+app/controllers/heroes_controller.rb:20:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started GET "/search?hero_name=hulk" for ::1 at 2021-01-31 10:51:31 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"hulk"}
+Completed 500 Internal Server Error in 308ms (ActiveRecord: 0.0ms | Allocations: 1798)
+
+
+  
+Faraday::ConnectionFailed (Failed to open TCP connection to www.sandbox.youracclaim.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/services/credlyService.rb:10:in `find_org'
+app/controllers/heroes_controller.rb:20:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started GET "/search?hero_name=hulk" for ::1 at 2021-01-31 10:52:11 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"hulk"}
+Completed 500 Internal Server Error in 312ms (ActiveRecord: 0.0ms | Allocations: 1671)
+
+
+  
+Faraday::ConnectionFailed (Failed to open TCP connection to www.sandbox.youracclaim.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/services/credlyService.rb:8:in `find_org'
+app/controllers/heroes_controller.rb:20:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started GET "/search?hero_name=hulk" for ::1 at 2021-01-31 10:53:59 -0800
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"hulk"}
+Completed 500 Internal Server Error in 542ms (ActiveRecord: 0.0ms | Allocations: 2539)
+
+
+  
+Faraday::ConnectionFailed (Failed to open TCP connection to www.sandbox.youracclaim.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/services/credlyService.rb:8:in `find_org'
+app/controllers/heroes_controller.rb:20:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started PUT "/__web_console/repl_sessions/30bbd0b5728f4fce0a3fbd1d97090d09" for ::1 at 2021-01-31 10:54:22 -0800
+Started PUT "/__web_console/repl_sessions/30bbd0b5728f4fce0a3fbd1d97090d09" for ::1 at 2021-01-31 10:54:23 -0800
+Started GET "/search?hero_name=hulk" for ::1 at 2021-01-31 10:54:37 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"hulk"}
+Completed 500 Internal Server Error in 323ms (ActiveRecord: 0.0ms | Allocations: 1677)
+
+
+  
+Faraday::ConnectionFailed (Failed to open TCP connection to www.sandbox.youracclaim.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/services/credlyService.rb:8:in `find_org'
+app/controllers/heroes_controller.rb:20:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started GET "/search?hero_name=hulk" for ::1 at 2021-01-31 10:56:35 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"hulk"}
+Completed 500 Internal Server Error in 356ms (ActiveRecord: 0.0ms | Allocations: 1677)
+
+
+  
+Faraday::ConnectionFailed (Failed to open TCP connection to www.sandbox.youracclaim.comb4a0ff67-70a9-47c1-acd3-5b8170afe777:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/services/credlyService.rb:8:in `find_org'
+app/controllers/heroes_controller.rb:20:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started PUT "/__web_console/repl_sessions/52cb1d62c144ac47ffaeee158a7ab7c7" for ::1 at 2021-01-31 10:56:47 -0800
+Started PUT "/__web_console/repl_sessions/52cb1d62c144ac47ffaeee158a7ab7c7" for ::1 at 2021-01-31 10:56:47 -0800
+Started GET "/search?hero_name=hulk" for ::1 at 2021-01-31 10:58:43 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"hulk"}
+Completed 500 Internal Server Error in 279ms (ActiveRecord: 0.0ms | Allocations: 1635)
+
+
+  
+Faraday::ConnectionFailed (Failed to open TCP connection to www.sandbox.youracclaim.comb4a0ff67-70a9-47c1-acd3-5b8170afe777:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/services/credlyService.rb:8:in `find_org'
+app/controllers/heroes_controller.rb:20:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started PUT "/__web_console/repl_sessions/81bbf1cb0b45983813e942ead7223394" for ::1 at 2021-01-31 10:58:52 -0800
+Started PUT "/__web_console/repl_sessions/81bbf1cb0b45983813e942ead7223394" for ::1 at 2021-01-31 10:58:52 -0800
+Started PUT "/__web_console/repl_sessions/81bbf1cb0b45983813e942ead7223394" for ::1 at 2021-01-31 10:59:17 -0800
+Started GET "/search?hero_name=hulk" for ::1 at 2021-01-31 10:59:35 -0800
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"hulk"}
+
+
+ #<Faraday::Response:0x00007fe43eb44298>
+  Rendering heroes/search.html.erb within layouts/application
+  Rendered heroes/search.html.erb within layouts/application (Duration: 2.2ms | Allocations: 295)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 6.9ms | Allocations: 2511)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 83)
+Completed 200 OK in 761ms (Views: 46.9ms | ActiveRecord: 0.0ms | Allocations: 12318)
+
+
+Started GET "/" for ::1 at 2021-01-31 10:59:51 -0800
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 5.8ms | Allocations: 2306)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 5766)
+
+
+Started GET "/heroes" for ::1 at 2021-01-31 10:59:51 -0800
+Processing by HeroesController#index as HTML
+  Rendering heroes/index.html.erb within layouts/application
+  Rendered heroes/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 324)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 4.8ms | Allocations: 2292)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 5564)
+
+
+Started GET "/search?hero_name=hulk" for ::1 at 2021-01-31 11:00:18 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"hulk"}
+
+
+ #<Faraday::Response:0x00007fe443974b70>
+  Rendering heroes/search.html.erb within layouts/application
+  Rendered heroes/search.html.erb within layouts/application (Duration: 0.1ms | Allocations: 17)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 7.6ms | Allocations: 2306)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 552ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 8511)
+
+
+Started GET "/heroes" for ::1 at 2021-01-31 11:01:53 -0800
+Processing by HeroesController#index as HTML
+  Rendering heroes/index.html.erb within layouts/application
+  Rendered heroes/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 6.5ms | Allocations: 2292)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 28ms (Views: 27.4ms | ActiveRecord: 0.0ms | Allocations: 5364)
+
+
+Started GET "/search?hero_name=thor" for ::1 at 2021-01-31 11:01:56 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"thor"}
+
+
+ #<Faraday::Response:0x00007fe43ee2eb20>
+Completed 500 Internal Server Error in 527ms (ActiveRecord: 0.0ms | Allocations: 2325)
+
+
+  
+NoMethodError (undefined method `body' for true:TrueClass):
+  
+app/controllers/heroes_controller.rb:21:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started PUT "/__web_console/repl_sessions/aa5a2f091fa2a4bec80494e51235829b" for ::1 at 2021-01-31 11:02:07 -0800
+Started PUT "/__web_console/repl_sessions/aa5a2f091fa2a4bec80494e51235829b" for ::1 at 2021-01-31 11:02:09 -0800
+Started PUT "/__web_console/repl_sessions/aa5a2f091fa2a4bec80494e51235829b" for ::1 at 2021-01-31 11:02:13 -0800
+Started GET "/search?hero_name=thor" for ::1 at 2021-01-31 11:03:13 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"thor"}
+Completed 500 Internal Server Error in 525ms (ActiveRecord: 0.0ms | Allocations: 1757)
+
+
+  
+JSON::ParserError (783: unexpected token at ''):
+  
+app/controllers/heroes_controller.rb:21:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started PUT "/__web_console/repl_sessions/c7e7e493c2d51e50d328024c2da64ab4" for ::1 at 2021-01-31 11:03:17 -0800
+Started PUT "/__web_console/repl_sessions/c7e7e493c2d51e50d328024c2da64ab4" for ::1 at 2021-01-31 11:03:22 -0800
+Started GET "/" for ::1 at 2021-01-31 11:05:02 -0800
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 5.5ms | Allocations: 2306)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms | Allocations: 5229)
+
+
+Started GET "/heroes" for ::1 at 2021-01-31 11:05:03 -0800
+Processing by HeroesController#index as HTML
+  Rendering heroes/index.html.erb within layouts/application
+  Rendered heroes/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 134)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 7.1ms | Allocations: 2292)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 5402)
+
+
+Started GET "/search?hero_name=thor" for ::1 at 2021-01-31 11:05:06 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"thor"}
+Completed 500 Internal Server Error in 533ms (ActiveRecord: 0.0ms | Allocations: 1793)
+
+
+  
+JSON::ParserError (783: unexpected token at ''):
+  
+app/controllers/heroes_controller.rb:21:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started PUT "/__web_console/repl_sessions/bc4bd3a8024a432ffd1dda95b9d21e42" for ::1 at 2021-01-31 11:05:11 -0800
+Started PUT "/__web_console/repl_sessions/bc4bd3a8024a432ffd1dda95b9d21e42" for ::1 at 2021-01-31 11:05:13 -0800
+Started GET "/search?hero_name=thor" for ::1 at 2021-01-31 11:06:04 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"thor"}
+
+
+
+
+
+
+ -- #<Faraday::Response:0x00007fe43ece2b90 @on_complete_callbacks=[], @env=#<Faraday::Env @method=:get @url=#<URI::HTTP http://sandbox.youracclaim.com/badge_templates> @request=#<Faraday::RequestOptions (empty)> @request_headers={"User-Agent"=>"Faraday v1.3.0", "Authorization"=>"Basic SUNCX29HRG5qY1NOQ3JxR2d6cnZSaEJ5RzVHbWkyM1lQOXJEOg=="} @ssl=#<Faraday::SSLOptions verify=true> @response=#<Faraday::Response:0x00007fe43ece2b90 ...> @response_headers={"server"=>"Cowboy", "date"=>"Sun, 31 Jan 2021 19:06:05 GMT", "connection"=>"keep-alive", "content-type"=>"text/html", "location"=>"https://sandbox.youracclaim.com/badge_templates", "transfer-encoding"=>"chunked", "via"=>"1.1 vegur"} @status=301 @reason_phrase="Moved Permanently" @response_body="">> 
+
+
+
+Completed 500 Internal Server Error in 528ms (ActiveRecord: 0.0ms | Allocations: 2304)
+
+
+  
+NoMethodError (undefined method `body' for true:TrueClass):
+  
+app/controllers/heroes_controller.rb:21:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started GET "/search?hero_name=thor" for ::1 at 2021-01-31 11:06:41 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"thor"}
+
+
+
+
+
+
+ -- #<Faraday::Response:0x00007fe443a8fe88 @on_complete_callbacks=[], @env=#<Faraday::Env @method=:get @url=#<URI::HTTP http://sandbox.youracclaim.com/v1/organizations/b4a0ff67-70a9-47c1-acd3-5b8170afe777> @request=#<Faraday::RequestOptions (empty)> @request_headers={"User-Agent"=>"Faraday v1.3.0", "Authorization"=>"Basic SUNCX29HRG5qY1NOQ3JxR2d6cnZSaEJ5RzVHbWkyM1lQOXJEOg=="} @ssl=#<Faraday::SSLOptions verify=true> @response=#<Faraday::Response:0x00007fe443a8fe88 ...> @response_headers={"server"=>"Cowboy", "date"=>"Sun, 31 Jan 2021 19:06:41 GMT", "connection"=>"keep-alive", "content-type"=>"text/html", "location"=>"https://sandbox.youracclaim.com/v1/organizations/b4a0ff67-70a9-47c1-acd3-5b8170afe777", "transfer-encoding"=>"chunked", "via"=>"1.1 vegur"} @status=301 @reason_phrase="Moved Permanently" @response_body="">> 
+
+
+
+Completed 500 Internal Server Error in 471ms (ActiveRecord: 0.0ms | Allocations: 2276)
+
+
+  
+NoMethodError (undefined method `body' for true:TrueClass):
+  
+app/controllers/heroes_controller.rb:21:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started GET "/search?hero_name=thor" for ::1 at 2021-01-31 11:06:43 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"thor"}
+
+
+
+
+
+
+ -- #<Faraday::Response:0x00007fe43f370728 @on_complete_callbacks=[], @env=#<Faraday::Env @method=:get @url=#<URI::HTTP http://sandbox.youracclaim.com/v1/organizations/b4a0ff67-70a9-47c1-acd3-5b8170afe777> @request=#<Faraday::RequestOptions (empty)> @request_headers={"User-Agent"=>"Faraday v1.3.0", "Authorization"=>"Basic SUNCX29HRG5qY1NOQ3JxR2d6cnZSaEJ5RzVHbWkyM1lQOXJEOg=="} @ssl=#<Faraday::SSLOptions verify=true> @response=#<Faraday::Response:0x00007fe43f370728 ...> @response_headers={"server"=>"Cowboy", "date"=>"Sun, 31 Jan 2021 19:06:44 GMT", "connection"=>"keep-alive", "content-type"=>"text/html", "location"=>"https://sandbox.youracclaim.com/v1/organizations/b4a0ff67-70a9-47c1-acd3-5b8170afe777", "transfer-encoding"=>"chunked", "via"=>"1.1 vegur"} @status=301 @reason_phrase="Moved Permanently" @response_body="">> 
+
+
+
+Completed 500 Internal Server Error in 473ms (ActiveRecord: 0.0ms | Allocations: 2313)
+
+
+  
+NoMethodError (undefined method `body' for true:TrueClass):
+  
+app/controllers/heroes_controller.rb:21:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started GET "/search?hero_name=thor" for ::1 at 2021-01-31 11:08:56 -0800
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"thor"}
+Completed 500 Internal Server Error in 909ms (ActiveRecord: 0.0ms | Allocations: 4009)
+
+
+  
+NoMethodError (undefined method `response' for #<Faraday::Response:0x00007fa525309248>
+Did you mean?  reason_phrase):
+  
+app/services/credlyService.rb:10:in `find_org'
+app/controllers/heroes_controller.rb:20:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started PUT "/__web_console/repl_sessions/7c65849b54a22e057ed0b5df442700f7" for ::1 at 2021-01-31 11:09:02 -0800
+Started PUT "/__web_console/repl_sessions/7c65849b54a22e057ed0b5df442700f7" for ::1 at 2021-01-31 11:09:05 -0800
+Started PUT "/__web_console/repl_sessions/7c65849b54a22e057ed0b5df442700f7" for ::1 at 2021-01-31 11:09:37 -0800
+Started PUT "/__web_console/repl_sessions/7c65849b54a22e057ed0b5df442700f7" for ::1 at 2021-01-31 11:09:37 -0800
+Started PUT "/__web_console/repl_sessions/7c65849b54a22e057ed0b5df442700f7" for ::1 at 2021-01-31 11:09:43 -0800
+Started PUT "/__web_console/repl_sessions/7c65849b54a22e057ed0b5df442700f7" for ::1 at 2021-01-31 11:09:49 -0800
+Started PUT "/__web_console/repl_sessions/7c65849b54a22e057ed0b5df442700f7" for ::1 at 2021-01-31 11:10:02 -0800
+Started PUT "/__web_console/repl_sessions/7c65849b54a22e057ed0b5df442700f7" for ::1 at 2021-01-31 11:10:04 -0800
+Started GET "/search?hero_name=thor" for ::1 at 2021-01-31 11:10:38 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"thor"}
+
+
+
+
+
+
+ -- {"data":{"id":"b4a0ff67-70a9-47c1-acd3-5b8170afe777","name":"Cody Org","website_url":"www.test.com","webhook_url":null,"contact_email":"jason.haertel-strehlow@pearson.com","technical_contact_email":"jason.haertel-strehlow@pearson.com","zip_or_postal_code":"55378","organization_type":null,"bio":"test","twitter_url":null,"vanity_slug":"cody-org","facebook_url":null,"linked_in_url":null,"linked_in_org_id":null,"city":"Savage","address":"14328 Salem Ave","primary_hex_color":null,"support_email":null,"support_url":null,"allowed_webhooks":[],"enable_blockchain":false,"print_method":null,"pdf_id":"191666","linkedin_a2p_url":null,"location":"14328 Salem Ave Savage Minnesota 55378 United States","country":"United States","state_or_province":"Minnesota","created_at":"2021-01-29T19:48:43.548Z","updated_at":"2021-01-29T19:48:53.233Z","vanity_url":"https://sandbox.youracclaim.com/org/cody-org","verified_at":null,"verified":false,"photo":{"id":"178ea311-45a9-42b6-9ad3-a82c188ab2be","url":"https://sandbox-images.youracclaim.com/images/178ea311-45a9-42b6-9ad3-a82c188ab2be/large_organization-600x600.png"},"photo_url":"https://sandbox-images.youracclaim.com/images/178ea311-45a9-42b6-9ad3-a82c188ab2be/large_organization-600x600.png"},"metadata":{}} 
+
+
+
+Completed 500 Internal Server Error in 707ms (ActiveRecord: 0.0ms | Allocations: 2787)
+
+
+  
+NoMethodError (undefined method `body' for true:TrueClass):
+  
+app/controllers/heroes_controller.rb:21:in `find_hero'
+app/controllers/heroes_controller.rb:7:in `search'
+Started PUT "/__web_console/repl_sessions/47ad6b0a61052b0d3766a29442fdbcb0" for ::1 at 2021-01-31 11:10:49 -0800
+Started PUT "/__web_console/repl_sessions/47ad6b0a61052b0d3766a29442fdbcb0" for ::1 at 2021-01-31 11:10:50 -0800
+Started GET "/search?hero_name=thor" for ::1 at 2021-01-31 11:11:46 -0800
+Processing by HeroesController#search as HTML
+  Parameters: {"hero_name"=>"thor"}
+
+
+
+ {"data":{"id":"b4a0ff67-70a9-47c1-acd3-5b8170afe777","name":"Cody Org","website_url":"www.test.com","webhook_url":null,"contact_email":"jason.haertel-strehlow@pearson.com","technical_contact_email":"jason.haertel-strehlow@pearson.com","zip_or_postal_code":"55378","organization_type":null,"bio":"test","twitter_url":null,"vanity_slug":"cody-org","facebook_url":null,"linked_in_url":null,"linked_in_org_id":null,"city":"Savage","address":"14328 Salem Ave","primary_hex_color":null,"support_email":null,"support_url":null,"allowed_webhooks":[],"enable_blockchain":false,"print_method":null,"pdf_id":"191666","linkedin_a2p_url":null,"location":"14328 Salem Ave Savage Minnesota 55378 United States","country":"United States","state_or_province":"Minnesota","created_at":"2021-01-29T19:48:43.548Z","updated_at":"2021-01-29T19:48:53.233Z","vanity_url":"https://sandbox.youracclaim.com/org/cody-org","verified_at":null,"verified":false,"photo":{"id":"178ea311-45a9-42b6-9ad3-a82c188ab2be","url":"https://sandbox-images.youracclaim.com/images/178ea311-45a9-42b6-9ad3-a82c188ab2be/large_organization-600x600.png"},"photo_url":"https://sandbox-images.youracclaim.com/images/178ea311-45a9-42b6-9ad3-a82c188ab2be/large_organization-600x600.png"},"metadata":{}}
+  Rendering heroes/search.html.erb within layouts/application
+  Rendered heroes/search.html.erb within layouts/application (Duration: 2.0ms | Allocations: 182)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 6.9ms | Allocations: 2511)
+  Rendered shared/_footer.html.erb (Duration: 1.8ms | Allocations: 83)
+Completed 200 OK in 782ms (Views: 36.5ms | ActiveRecord: 0.0ms | Allocations: 10772)
+
+

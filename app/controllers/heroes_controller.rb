@@ -16,10 +16,10 @@ class HeroesController < ApplicationController
   private
 
    def find_hero(hero_name)
-    response = HeroesService::Search.by_name_begins_with(hero_name)
-    CredlyService::Badge.find_org
+    hero_response = HeroesService::Search.by_name_begins_with(hero_name)
+    credly_response = CredlyService::Badge.find_org()
     return nil if response.status != 200
-    @response = JSON.parse(response.body)
+    @response = JSON.parse(hero_response.body)
    end
 
 end

@@ -17,9 +17,8 @@ class HeroesController < ApplicationController
                                                     new_hero.name, 
                                                     new_hero.name, 
                                                     credly_badges["data"][@rand_num]["id"])
-
     # Assign the badge values to the hero model. We don't want to keep calling the API
-    new_hero.update(badge_id: issued_badge["data"]["id"],
+    new_hero.update(badge_id: issued_badge["data"][0]["id"],
                     badge_template_id: credly_badges["data"][@rand_num]["id"],
                     badge_name: credly_badges["data"][@rand_num]["name"], 
                     badge_skill: credly_badges["data"][@rand_num]["skills"][0], 

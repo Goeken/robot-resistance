@@ -19,7 +19,7 @@ module CredlyService
     end
 
     def self.issue_badge(recipient_email, first_name, last_name, badge_template_id)
-   	  connection = Faraday.new(url: "#{URL}#{ORG}")
+   	  connection = Faraday.new(url: "#{URL}#{ORG}/badges")
 	    connection.basic_auth(AUTH_TOKEN, '')     
       response = connection.get '', { recipient_email: recipient_email, issued_to_first_name: first_name, issued_to_last_name: last_name, badge_template_id: badge_template_id, issued_at: Time.now }
       return JSON.parse(response.body)

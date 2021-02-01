@@ -42,7 +42,16 @@
 		    <% end %>
 		</div>
 	</div>
+	<div class="container-fluid find-new-recruits-section">
+		<div class="row">
+			<div class="col-md-12">
+				<h3>You should grow your resistance. Let's head over to the hero catalog and search for some new Heroes.</h3>
+				<%= link_to "Recruit a Hero", heroes_path, class: "nav-link btn btn-primary find-new-hero-path" %>
+			</div>
+		</div>
+	</div>
 </div>
+
 <% if @new_hero %>
 <div class="modal fade badge-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-md">

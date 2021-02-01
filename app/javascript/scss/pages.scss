@@ -69,6 +69,32 @@
 .home-page--new-col-padding{
 	padding-top: 30px;
 }
+.find-new-recruits-section{
+	background-color: #f5f6ff;
+	padding: 40px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	margin-top:20px;
+	text-align: center;
+	h3{
+	    max-width: 800px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    font-size: 25px;
+	    padding-bottom: 30px;
+	}
+	.find-new-hero-path{
+		background-color: #3F729B !important;
+		border: 1px solid #3F729B !important;
+		color: white !important;
+    	max-width: 160px;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+	.find-new-hero-path:hover{
+		opacity: .6;
+	}
+}
 .hero--img-home{
 	max-width: 60px;
 	padding-bottom: 10px;
@@ -103,6 +129,8 @@
 .close-modal-btn:hover{
 	opacity: .6;
 }
+
+
 // Search Page Styles
 .search-page--outer-wrapper{
 	min-height: calc(100vh - 166px);

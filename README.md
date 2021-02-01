@@ -2,8 +2,9 @@
 ---
 #### Overview
   - For this challenge, I used https://developer.marvel.com/docs API for access to heroes.
+  - There was an authentication issue with the image links for the marvel API, so I used placeholders images instead.
   - Application uses a Starts With Search to find different characters. Limit 20 per search.
-  - Database contains the `Heroes` model. I used this model to store the hero once selected, as well as the issued badge information. 
+  - Database contains the `Heroes` model. I used this model to store the hero once selected, as well as the issued badge information. You can see all selected heroes on the homepage.
   - A hero can be selected only once. The button will be disabled after it's been selected.
   - A hero selected will be assessed by the resistance members, then they will find the appropriate badge template to assign. Once the badge template is set, a new badge will be issued.
   - All previously selected heroes will be displayed on the home page, along with their badge information. The badge information is being pulled from the DB since there is no point in making multiple API calls. 

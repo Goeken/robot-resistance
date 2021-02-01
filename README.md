@@ -1,61 +1,16 @@
-# Credly Take-home
+# The Robot Resistance
+---
+#### Overview
+  - For this challenge, I used https://developer.marvel.com/docs API for access to heroes.
+  - Application uses a Starts With Search to find different characters. Limit 20 per search.
+  - Database contains the `Heroes` model. I used this model to store the hero once selected, as well as the issued badge information. 
+  - A hero can be selected only once. The button will be disabled after it's been selected.
+  - A hero selected will be assessed by the resistance members, then they will find the appropriate badge template to assign. Once the badge template is set, a new badge will be issued.
+  - All previously selected heroes will be displayed on the home page, along with their badge information. The badge information is being pulled from the DB since there is no point in making multiple API calls. 
+  - Deployed Application to Heroku: https://the-robot-resistance.herokuapp.com/
+***
 
-### System Requirements
-- git
-- OS X Environment
-    - [homebrew](https://brew.sh/)
-    - [rbenv](https://github.com/rbenv/rbenv) or [rvm](https://rvm.io)
-- Docker Environment
-    - [docker](https://docker.com)
-
-### Development Environment Setup
-
-- **OS X**
-    - install `yarn`
-        - `brew install yarn`
-    - install `postgres`
-        - `brew install postgres`
-    - start `postgres` via homebrew
-        - `brew services start postgres`
-    - install `rbenv`
-        - `brew install rbenv`
-    - install Ruby `v2.7.1`
-        - `rbenv install 2.7.1`
-    - clone project
-        - `git clone git@github.com:youracclaim/credly-take-home.git`
-    - `cd` into project directory
-        - `cd /path/to/credly-take-home`
-    - install `foreman`
-        - `gem install -N foreman`
-    - install bundled gems
-        - `bundle install`
-    - install yarn packages
-        - `yarn install`
-    - set up development database
-        - `bundle exec rake db:setup`
-- **Docker**
-    - build and run containers
-        - `docker-compose up --build`
-    - set up database
-        - `docker-compose run web rails db:setup`
-    
-    
-### Running the server
-- run `foreman start -f Procfile.dev`
-- open `localhost:5000` in your browser
-
-### Deploying to Heroku
-- create a [Heroku](https://heroku.com) account if you don't already have one
-- install Heroku CLI tools
-    - `brew tap heroku/brew && brew install heroku`
-- log into Heroku
-    - `heroku login`
-- create a new app
-    - `heroku apps:create`
-    - take note of app name, e.g. `pacific-fortress-65242`
-- add Heroku remote repo for the app that was just created
-    - `heroku git:remote -a pacific-fortress-65242`
-- deploy your app
-    - `git push heroku main`
-    - ignore warnings
-    - link to app will include app name, e.g. https://pacific-fortress-65242.herokuapp.com/
+#### Feature wish list
+  - For a more scalable approach, I would have created a `badge` model if the hero is assigned multiple badges.
+  - I would have liked to create my own badge templates, but I did not see any documentation about how to do so?
+  - I would have liked to use more React on the project, but I didn't see enough functionality requiring it, and it would have cost time.

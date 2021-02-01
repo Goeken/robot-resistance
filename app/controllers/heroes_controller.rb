@@ -1,7 +1,6 @@
 class HeroesController < ApplicationController
   include HeroesService
   include CredlyService
-  require 'pry'
   before_action :set_hero_value, only: [:index]
   before_action :set_rand_num, only: [:create]
 
@@ -10,11 +9,14 @@ class HeroesController < ApplicationController
   def create
     new_hero = Hero.create(hero_params)
 
-    # Find the credly badge template. We will store it with the hero for later reference.
+    # Find the credly badge templates. We need these to issue a new badge
     credly_badges = CredlyService::Badge.get_all_badge_templates()
 
     # Issue a new Badge to the Hero
-    issued_badge = CredlyService::Badge.issue_badge(new_hero.name + "@gmail.com", new_hero.name, new_hero.name, credly_badges["data"][@rand_num]["id"])
+    issued_badge = CredlyService::Badge.issue_badge(new_hero.name + "@gmail.com", 
+                                                    new_hero.name, 
+                                                    new_hero.name, 
+                                                    credly_badges["data"][@rand_num]["id"])
 
     # Assign the badge values to the hero model. We don't want to keep calling the API
     new_hero.update(badge_id: issued_badge["data"]["id"],
@@ -28,10 +30,10 @@ class HeroesController < ApplicationController
   end
 
   def search
-    # find_hero is found in services/heroes folder to help with API Call
   	@heroes = find_hero(params[:hero_name])
   	@hero_count = @heroes["data"]["count"]
   	@heroes = @heroes["data"]["results"] 
+
     # responding with a js since I only want to update the results section 
     # of the page without reloading the whole page.
     respond_to do |format|  

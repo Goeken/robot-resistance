@@ -3,15 +3,27 @@ class HeroesController < ApplicationController
   include CredlyService
   require 'pry'
   before_action :set_hero_value, only: [:index]
+  before_action :set_rand_num, only: [:create]
 
   def index; end
 
   def create
     new_hero = Hero.create(hero_params)
+
     # Find the credly badge template. We will store it with the hero for later reference.
     credly_badges = CredlyService::Badge.get_all_badge_templates()
-    # There is only two badge templates available, choose one. 
-    new_hero.update(badge_id: credly_badges["data"][rand(0..1)]["id"])
+
+    # Issue a new Badge to the Hero
+    issued_badge = CredlyService::Badge.issue_badge(new_hero.name + "@gmail.com", new_hero.name, new_hero.name, credly_badges["data"][@rand_num]["id"])
+
+    # Assign the badge values to the hero model. We don't want to keep calling the API
+    new_hero.update(badge_id: issued_badge["data"]["id"],
+                    badge_template_id: credly_badges["data"][@rand_num]["id"],
+                    badge_name: credly_badges["data"][@rand_num]["name"], 
+                    badge_skill: credly_badges["data"][@rand_num]["skills"][0], 
+                    badge_description: credly_badges["data"][@rand_num]["description"], 
+                    badge_img: credly_badges["data"][@rand_num]["image_url"] )
+
     redirect_to root_path(:hero => new_hero.id), flash: { badge_modal: true }
   end
 
@@ -43,5 +55,10 @@ class HeroesController < ApplicationController
     params.permit(:name, :hero_id)
    end
 
+   def set_rand_num
+    # There is only two badge templates available,
+    # choose one at random since they are random heroes. 
+      @rand_num = rand(0..1)
+   end
 
 end

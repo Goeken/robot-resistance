@@ -30,7 +30,10 @@
 					       <h3 class="hero-name"><%= hero.name %></h3>
 					       <hr />
 					       <h3 class="badge-title">Badge:</h3>
-					       	<%= get_badge(hero.badge_id) %>
+					       <img class="badge-awarded-img" src="<%= hero.badge_img %>">
+					       	<p>Badge name: <%= hero.badge_name %></p>
+					       	<p>Badge name: <%= hero.badge_skill %></p>
+					       	<p>Badge name: <%= hero.badge_description %></p>
 					    </div>
 					</div>
 				<% end %>
@@ -50,10 +53,10 @@
 	    	<hr />
 	    	<div class="badge-information">
 	    		<h3>Badge Rewarded</h3>
-	    		<img src="<%= @credly_badge["data"]["image_url"] %>" class="badge-awarded-img">
-				<p><strong>Org:</strong> <%= @credly_badge["data"]["owner"]["name"] %></p>
-				<p><strong>Skill:</strong> <%= @credly_badge["data"]["skills"][0] %></p>
-				<p><strong>Description:</strong> <%= @credly_badge["data"]["description"] %></p>
+	    		<img src="<%= @new_hero.badge_img %>" class="badge-awarded-img">
+				<p><strong>Badge name:</strong> <%= @new_hero.badge_name %></p>
+				<p><strong>Skill:</strong> <%= @new_hero.badge_skill %></p>
+				<p><strong>Description:</strong> <%= @new_hero.badge_description %></p>
 	    	</div>
 	    	<hr />
 	    	<div class="close-modal-wrapper">

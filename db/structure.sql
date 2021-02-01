@@ -157,9 +157,13 @@ CREATE TABLE public.heros (
     id bigint NOT NULL,
     name text,
     hero_id text,
+    badge_template_id text,
     badge_id text,
+    badge_name text,
+    badge_skill text,
+    badge_description text,
+    badge_img text,
     description text,
-    thumbnail text,
     created_at timestamp(6) without time zone NOT NULL,
     updated_at timestamp(6) without time zone NOT NULL
 );

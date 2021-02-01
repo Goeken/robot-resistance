@@ -13,12 +13,10 @@ class HeroesController < ApplicationController
     credly_badges = CredlyService::Badge.get_all_badge_templates()
 
     # Issue a new Badge to the Hero
-    issued_badge = CredlyService::Badge.issue_badge(new_hero.name + "@gmail.com", 
-                                                    new_hero.name, 
-                                                    new_hero.name, 
-                                                    credly_badges["data"][@rand_num]["id"])
+    issued_badge = CredlyService::Badge.issue_badge(new_hero.name, credly_badges["data"][@rand_num]["id"])
+
     # Assign the badge values to the hero model. We don't want to keep calling the API
-    new_hero.update(badge_id: issued_badge["data"][0]["id"],
+    new_hero.update(badge_id: issued_badge["data"]["id"],
                     badge_template_id: credly_badges["data"][@rand_num]["id"],
                     badge_name: credly_badges["data"][@rand_num]["name"], 
                     badge_skill: credly_badges["data"][@rand_num]["skills"][0], 

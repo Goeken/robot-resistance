@@ -23,7 +23,6 @@
 	padding-bottom: 10px;
 }
 
-
 // Home page styles
 
 .home-page--outer-wrapper{
@@ -77,8 +76,34 @@
 .no-heroes{
 	padding-bottom: 60px;
 }
+.badge-modal-inner{
+	padding: 20px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.badge-information{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center !important;
+}
+.badge-awarded-img{
+	max-height: 70px;
+	max-width: 70px;
+}
+.close-modal-wrapper{
+	text-align: center !important;
+	padding-top: 20px;
+}
+.close-modal-btn{
+	background-color: gray !important;
+	border: 1px solid gray!important;
+	color: white !important;
+    min-width: 140px;
+}
+.close-modal-btn:hover{
+	opacity: .6;
+}
 // Search Page Styles
-
 .search-page--outer-wrapper{
 	min-height: calc(100vh - 166px);
 }
@@ -130,7 +155,10 @@
 .hero-name{
 	padding-top: 5px;
 	padding-bottom: 5px;
-
+	font-size: 19px;
+}
+.badge-title{
+	font-size: 19px;
 }
 .hero-description{
 	font-size: 12px;

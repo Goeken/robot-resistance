@@ -15,3 +15,4 @@ import 'scss/pages';
 import 'js/base';
 
 const images = require.context('../images', true)
+window.jQuery = window.$ = require('jquery')

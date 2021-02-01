@@ -7,11 +7,12 @@ class HeroesController < ApplicationController
   def index; end
 
   def create
-    # Check if Hero already exists - Return error message
-    Hero.create(hero_params)
-    # Now it's time to add a badge? Or should I add badge information with Hero
-
-    redirect_to root_path, flash: { badge_modal: true }
+    new_hero = Hero.create(hero_params)
+    # Find the credly badge template. We will store it with the hero for later reference.
+    credly_badges = CredlyService::Badge.get_all_badge_templates()
+    # There is only two badge templates available, choose one. 
+    new_hero.update(badge_id: credly_badges["data"][rand(0..1)]["id"])
+    redirect_to root_path(:hero => new_hero.id), flash: { badge_modal: true }
   end
 
   def search
@@ -29,9 +30,8 @@ class HeroesController < ApplicationController
   private
 
    def find_hero(hero_name)
+    # name_begins_with search is in services/heroes to help with the api call
     heroes_found = HeroesService::Search.by_name_begins_with(hero_name)
-    credly_badges = CredlyService::Badge.get_badge_templates()
-    return nil if response.status != 200
     JSON.parse(heroes_found.body)
    end
 
@@ -40,7 +40,7 @@ class HeroesController < ApplicationController
    end 
 
    def hero_params
-    params.permit(:name, :id)
+    params.permit(:name, :hero_id)
    end
 
 

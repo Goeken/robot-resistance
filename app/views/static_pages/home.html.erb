@@ -12,7 +12,6 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="container home-page--about-section">
 		<div class="row">
 			<div class="col-md-12 home-page--new-col-padding">
@@ -21,7 +20,6 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="container">
 		<div class="row">
 			<% if @heroes.present? %>
@@ -29,7 +27,10 @@
 					<div class="col-md-4">
 				      	<div class="indi-hero-wrap">
 					      <%= image_pack_tag "media/images/hero-placeholder.jpg", class: "hero--img-home" %>
-					       <h3 class="hero-name"><%= hero["name"] %></h3>
+					       <h3 class="hero-name"><%= hero.name %></h3>
+					       <hr />
+					       <h3 class="badge-title">Badge:</h3>
+					       	<%= get_badge(hero.badge_id) %>
 					    </div>
 					</div>
 				<% end %>
@@ -39,24 +40,34 @@
 		</div>
 	</div>
 </div>
-
-
-
-<!-- Large modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
-
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
+<% if @new_hero %>
+<div class="modal fade badge-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md">
     <div class="modal-content">
-    	<br/><br/>
-      This is it<br/><br/><br/><br/>
+    	<div class="badge-modal-inner">
+	    	<h3>Congratulations on the Recruit!</h3>
+	    	<p><span class="special-blue"><%= @new_hero.name %></span> will make a great addition. After analysis by the resistance members, we have concluded what our new heroes skills include. We will be issuing him this badge below. This badge will represent his skill</p>
+	    	<hr />
+	    	<div class="badge-information">
+	    		<h3>Badge Rewarded</h3>
+	    		<img src="<%= @credly_badge["data"]["image_url"] %>" class="badge-awarded-img">
+				<p><strong>Org:</strong> <%= @credly_badge["data"]["owner"]["name"] %></p>
+				<p><strong>Skill:</strong> <%= @credly_badge["data"]["skills"][0] %></p>
+				<p><strong>Description:</strong> <%= @credly_badge["data"]["description"] %></p>
+	    	</div>
+	    	<hr />
+	    	<div class="close-modal-wrapper">
+	    		<button class="btn btn-primary close-modal-btn" data-dismiss="modal">Close</button>
+	    	</div>
+	    </div>
     </div>
   </div>
 </div>
-
+<% end %>
 <script>
-	$('.bd-example-modal-lg').modal();
 	<% if flash[:badge_modal] %>
-		$('.bd-example-modal-lg').modal();
+		$(window).on('load', function() {
+			$('.badge-modal').modal();
+		})
 	<% end %>
 </script>

@@ -7,9 +7,20 @@ h1, h2, h3, h4, h5{
 	font-family: 'Montserrat', sans-serif;
 	color: #313342;
 }
-p{
+p, li{
 	font-family: 'Open Sans', sans-serif;
 	color: #6f7495;
+}
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
 }
 .navbar{
 	background-color: white;
